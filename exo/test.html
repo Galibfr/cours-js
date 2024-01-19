@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// var i = 0; // initialisation de la variable
+
+			// while (i < 10) {
+			// 	if (i > 4) {
+			// 		document.write("Bonjour" + "<br>");
+			// 	} else {
+			// 		document.write("bonjour---" + "<br>");
+			// 	}
+			// 	i = i + 1;
+			// }
+			//exo8
+			// var num = prompt("give me the number");
+			// for (var i = 0; i <= num; i++) {
+			// 	if (i % 2 == 0) {
+			// 		document.write("<span style = color:red>") + i + "</span> <br>";
+			// 	} else {
+			// 		document.write(i + "<br>");
+			// 	}
+			// }
+
+			// var mdp = "admin";
+			// var pseudo = "monPseudo";
+			// var mdpUser = prompt("Votre mot de passe");
+			// var pseudoUser = prompt("Votre pseudo");
+
+			// if (mdp == mdpUser && pseudo == pseudoUser) {
+			// 	alert("Bienvenue ");
+			// } else if (mdp != mdpUser && pseudo != pseudoUser) {
+			// 	alert("Erreur de mot de passe et de pseudo");
+			// } else if (mdp != mdpUser) {
+			// 	alert("Erreur de mot de passe");
+			// } else if (pseudo != pseudoUser) {
+			// 	alert("Erreur de pseudo");
+			// }
+
+			//    ***user qnd pqssword input****
+			// var user ="galib";
+			// var password ="password";
+			// var inputUser = prompt("User Name");
+			// var inputPassword = prompt("User Password please");
+
+			// if( user == inputUser && password == inputPassword){
+			// 	alert("loge in complite");
+
+			// } else if (user !=inputUser && password !=inputPassword){
+			// 	alert("wrong password or user name");
+			// }
+			// else if(user != inputUser){
+			// 	alert("erreur user name");
+			// } else if (password != inputPassword){
+			// 	alert("erreur password");
+			// }
+
+			//  ******* email dilidation*****
+			// var email = prompt("tapez votre email");
+			// if (email.includes("@")) {
+			// 	alert("email valide");
+			// } else {
+			// 	alert("email invalide");
+			// }
+			//    *********
+			// function myNameIs(prenome, nom, age) {
+			// 	document.write("Bonjour je m'appel " + prenome + nom +  age  + "<br>");
+			// }
+			// myNameIs("galib ", "hossain", 25);
+
+			// function myNameIs(hossain) {
+			// 	document.write("Bonjour je m'appel" + hossain + " <br>");
+			// }
+			// myNameIs("hossain");
+
+			// ******* calcutation saison***
+			// function meteo(saison, temperature) {
+			// 	let deg = "degré";
+			// 	let prefix = "en";
+
+			// 	if (saison == "printemps") {
+			// 		prefix = "au";
+			// 	}
+
+			// 	if (temperature > 1 || temperature < -1) {
+			// 		deg = "degrés";
+			// 	}
+			// 	let message =
+			// 		"Nous sommes " +
+			// 		prefix +
+			// 		" " +
+			// 		saison +
+			// 		" et il fait " +
+			// 		temperature +
+			// 		" " +
+			// 		deg;
+			// 	document.write(message);
+			// }
+			// meteo(prompt("saison"), prompt("temperature"));
+
+			//   ***calculator **
+			// function calculator(nb1,nb2,op){
+			//     document.write(eval(nb1+op+nb2));
+			// }
+			// ****** 12 array *****
+			// 	// calculator(prompt("nombre 1"), prompt("nombre 2"), prompt("operateur"));
+			// //  table classic******
+
+			// 	var monTab = ["pomm", "poite", "banane", "fraise", 55, "true"]; // declaration de un tablue
+			// 	document.write(monTab[2]); //*****tabil theke sonkha diye call kore deke ana, akhane 6 ta element ase, 0 theke start// *****
+
+			//   *****table multi dymentional******
+			// var tabMulti = [
+			// 	["pomm", "poite", "banane", "fraise"],
+			// 	["pomm", "poite", "banane", "fraise"],
+			// ];
+			// document.write(tabMulti[0][1]);
+
+			// var tabMulti = [
+			// 	[1, 2, 3, 9],
+			// 	[5.3, 9.3, 6.5],
+			// ];
+			// document.write(tabMulti[1][2]);
+
+			//  **** print massge with table*****
+			// var maConv = ["Salut", "cava?", "oui et toi?"];
+			// maConv.push("bien merci"); // push permet d ajouter un element a la fin du tableau
+			// document.write(maConv);
+
+			// maAjout.push("cerise");
+			//ajouter annanas a la fin du tableau
+
+			var panier = ["pomme", "poire", "banane", "fraise"]; // variable de type array (tableau)
+
+			// // ajouter annanas a la fin du tableau
+			// panier.push("annanas");
+			// document.write(panier);
+			// // ajouter cerise au debut du tableau
+			// panier.unshift("cerise");
+			// document.write(panier);
+			// // suppimer banane du tableau
+			// panier.splice(3, 1);
+			// document.write(panier);
+			// // remplacer poire par framboise
+			// panier.splice(2, 1, "framboise");
+			// document.write(panier);
+
+			
+			
+            
+			for(var i=0; i < panier.length; i++){
+				document.write(panier [i] + "-- <br>" );
+			}
+		</script>
+	</body>
+</html>
