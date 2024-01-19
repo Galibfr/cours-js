@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<title>Test</title>
+	</head>
+	<body>
+		<style>
+			img {
+				height: 300px;
+				width: 400px;
+			}
+		</style>
+		<img src="images/img/a.jpg" alt="" onclick="changeImage()" />
+
+		<script>
+			// var myBaliseImg = document.querySelector("img").src; récupe le chemin absolu
+
+			function changeImage() {
+				console.log(myBaliseImg);
+				var myBaliseImg = document.querySelector("img").getAttribute("src");
+
+				// switch(myBaliseImg) {
+				//     case "images/img/a.jpg":
+				//     document.querySelector("img").src = "images/img/b.jpg";
+				//     break;
+				//     case "images/img/b.jpg":
+				//     document.querySelector("img").src = "images/img/c.jpg";
+				//     break;
+				//     case "images/img/c.jpg":
+				//     document.querySelector("img").src = "images/img/d.jpg";
+				//     break;
+				//     case "images/img/d.jpg":
+				//     document.querySelector("img").src = "images/img/e.jpg";
+				//     break;
+				//     case "images/img/e.jpg":
+				//     document.querySelector("img").src = "images/img/a.jpg";
+				//     break;
+				// }
+
+				// if (myBaliseImg == "images/img/a.jpg") {
+				//     document.querySelector("img").src = "images/img/b.jpg";
+				// } else if (myBaliseImg == "images/img/b.jpg") {
+				//     document.querySelector("img").src = "images/img/c.jpg";
+				// } else if (myBaliseImg == "images/img/c.jpg") {
+				//     document.querySelector("img").src = "images/img/d.jpg";
+				// }else if (myBaliseImg == "images/img/d.jpg") {
+				//     document.querySelector("img").src = "images/img/e.jpg";
+				// } else if (myBaliseImg == "images/img/e.jpg") {
+				//     document.querySelector("img").src = "images/img/a.jpg";
+				// }
+			}
+			setInterval(changeImage, 2000); // permet de répéter une fonction ou un bout de code avec un délai entre chosi.
+			// setTimeout() durée à partir de laquelle commence la fonction;
+			var tabPics = [
+				"images/img/a.jpg",
+				"images/img/b.jpg",
+				"images/img/c.jpg",
+				"images/img/d.jpg",
+			];
+			var i = 0;
+			function changeImage() {
+				document.querySelector("img").src = tabPics[i]; // on attribue à l'attribut src de la balise img la valeur du tableau avec i = 0 (donc qui renvoie à la première valeur du tableau)
+				i++; // à chaque intervale la valeur sélectionnée du tableau est augmentée de un, donc on passe à l'image suivante.
+				if (i == tabPics.length) {
+					i = 0; // une fois que i est égal au nombre d'éléments contenu dans le tableau càd 4, il revient à 0 et donc ça fait une boucle infinie.
+				}
+			}
+			// setInterval(changeImage, 2000);
+		</script>
+	</body>
+</html>
